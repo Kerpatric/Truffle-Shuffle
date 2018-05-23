@@ -1,6 +1,6 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: limegreen;
+    background-color:saddlebrown;
     overflow: hidden;
 }
 
@@ -29,4 +29,6 @@
     position: relative;
     height: 46.31px;
     width: 260px;
+    margin-left: auto;
+    margin-right: auto;
 }
