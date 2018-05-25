@@ -12,10 +12,3 @@ CREATE TABLE truffles (
   PRIMARY KEY (id)
 );
 
-CREATE TABLE contact (
-  id INT(16) NOT NULL AUTO_INCREMENT,
-  contact_name VARCHAR(100) NOT NULL,
-  contact_email VARCHAR(100) NOT NULL,
-  contact_message VARCHAR(10000) NOT NULL,
-  PRIMARY KEY (id)
-);

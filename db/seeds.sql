@@ -10,7 +10,7 @@ INSERT INTO truffles (item_type, name, img_src, size) VALUES ("tartufo bianco Wh
 INSERT INTO truffles (item_type, name, img_src, size) VALUES ("tartufo bianco White Truffle Tuber Magnatum Pico", "White Truffle Carpaccio Slices", "./images/truffles/white-truffle.jpg", "2.82 oz.");
 INSERT INTO truffles (item_type, name, img_src, size) VALUES ("tartufo bianco White Truffle Tuber Magnatum Pico", "White Truffle Carpaccio Slices", "./images/truffles/white-truffle.jpg", "4.94 oz.");
 
-#Black Truffles
+#Black Truffles	
 INSERT INTO truffles (item_type, name, img_src, size) VALUES ("tartufo NERO BLAck WINTER truffle Tuber Melanosporum Vitt", "Whole Fine Black Truffle", "./images/truffles/black-winter-truffle.jpg", "0.88 oz.");
 INSERT INTO truffles (item_type, name, img_src, size) VALUES ("tartufo NERO BLAck WINTER truffle Tuber Melanosporum Vitt", "Whole Fine Black Truffle", "1.76 oz.");
 
