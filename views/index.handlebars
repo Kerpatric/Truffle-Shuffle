@@ -1,37 +1,8 @@
-{{!-- <h1>Cats!</h1>
-<h2>Cats that are not sleepy!</h2>
-<ul>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-<h2>Cats that are sleepy!</h2>
-<ul>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-<h2>Add a Cat</h2>
-<form class="create-form">
-  <div class="form-group">
-    <label for="ca">Cat Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
-  <div class="form-group">
-    <label for="sleepy">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div>
-  <button type="submit">Add Cat</button>
-</form> --}}
-
+ {{#each truffles}}
 <div class="w3-row-padding w3-padding-16 w3-center" class="truffle-card">
-    <div class="w3-quarter">
-      <img src="{{image_src}}" alt="{{item_type}}" style="width:100%">
-      <h3>{{item_type}}</h3>
-      <p>{{item_type_description}}</p>
-    </div>
+  <div class="w3-quarter">
+    <img src="{{image_src}}" alt="{{item_type}}" style="width:100%">
+    <h3>{{item_type}}</h3>
+    <p>{{item_type_description}}</p>
+  </div>
+  {{/each}}
