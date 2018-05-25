@@ -3,11 +3,11 @@ var orm = require("../config/orm.js");
 
 var truffle = {
   all: function(cb) {
-    orm.all("truffles", function(res) {
+    orm.all("truffle", function(res) {
       cb(res);
     });
   }
 };
 
-// Export the database functions for the controller (trufflesController.js).
+// Export the database functions for the controller (truffleController.js).
 module.exports = truffle;

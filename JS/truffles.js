@@ -1,9 +1,9 @@
 
 // Script to open and close sidebar
-function truffles_open() {
+function truffle_open() {
     document.getElementById("mySidebar").style.display = "block";
 }
  
-function truffles_close() {
+function truffle_close() {
     document.getElementById("mySidebar").style.display = "none";
 }

@@ -1,9 +1,9 @@
-DROP DATABASE IF EXISTS truffles_db;
-CREATE DATABASE truffles_db;
+DROP DATABASE IF EXISTS truffle_db;
+CREATE DATABASE truffle_db;
 
-USE truffles_db;
+USE truffle_db;
 
-CREATE TABLE truffles (
+CREATE TABLE truffle (
   id INT(16) NOT NULL AUTO_INCREMENT,
   item_type VARCHAR(500) NOT NULL,
   name VARCHAR(100) NOT NULL,
