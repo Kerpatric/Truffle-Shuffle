@@ -3,7 +3,7 @@ var orm = require("../config/orm.js");
 
 var truffle = {
   all: function(cb) {
-    orm.all("truffle", function(res) {
+    orm.all("truffles", function(res) {
       cb(res);
     });
   }
