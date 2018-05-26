@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="css/Truffles.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
-    <title>Document</title>
+    <title>Contact</title>
 </head>
 
 <body>
@@ -21,9 +21,17 @@
         </div>
     </div>
 
-    <form action="mailto:sammyg413@gmail.com" method="post" enctype="text/plain">
-        <input type="submit" value="Comments &amp; Questions">
-    </form>
+        <form action="/action_page.php" method="get">
+            Email:
+            <br>
+            <input id="emailInput" type="text" name="emailInput">
+            <br> Comment or Question:
+            <br>
+            <textarea rows="4" cols="50" id="emailBody" name="comment" form="usrform">
+            </textarea>
+            <br>
+        </form>
+        <input id="submitButton" type="submit" value="Submit">
 </body>
 
 </html>
