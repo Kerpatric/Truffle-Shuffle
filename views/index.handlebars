@@ -1,8 +1,9 @@
- {{#each truffle}}
-<div class="w3-row-padding w3-padding-16 w3-center" class="truffle-card">
-  <div class="w3-quarter">
-    <img src="{{image_src}}" alt="{{item_type}}" style="width:100%">
-    <h3>{{item_type}}</h3>
-    <p>{{item_type_description}}</p>
+{{#each truffles}}
+  <div class="w3-row-padding w3-padding-16 w3-center" class="truffle-card">
+    <div class="w3-quarter">
+      <img src="{{image_src}}" alt="{{item_type}}" style="width:100%">
+      <h3>{{item_type}}</h3>
+      <p>{{item_type_description}}</p>
+    </div>
   </div>
-  {{/each}}
+{{/each}}

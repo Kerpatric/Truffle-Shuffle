@@ -1,7 +1,11 @@
 var express = require("express");
 var bodyParser = require("body-parser");
+var data = require("./db/data.json");
 
 var PORT = process.env.PORT || 8080;
+
+// Requiring our models for syncing
+var db = require("./models");
 
 var app = express();
 
@@ -25,8 +29,51 @@ var routes = require("./controllers/truffle-routes.js");
 
 app.use(routes);
 
-// Start our server so that it can begin listening to client requests.
-app.listen(PORT, function() {
-  // Log (server-side) when our server has started
-  console.log("Server listening on: http://localhost:" + PORT);
+function seed_data() {
+  var types = {};
+  var createdType = {};
+
+  for (var i = 0; i < data.length; i++) {
+    types[data[i]["item_type"]] = data[i];
+    console.log(data[i]);
+    if ( createdType[data[i]["item_type"]] == null) {
+      createdType[data[i]["item_type"]] = [];
+    }
+    createdType[data[i]["item_type"]].push(data[i]);
+    console.log(createdType[data[i]["item_type"]]);
+
+  }
+  for (var key in types) {
+    db.Item_type.create({
+      item_type: types[key]["item_type"],
+      img_src: types[key]["img_src"]
+    }).then(function (input) {
+      for (var i = 0; i < createdType[key].length; i++) {
+        db.Item.create({
+          ItemTypeId: input.id,
+          name: createdType[key][i]["name"],
+          size: createdType[key][i]["size"]
+        });
+      }
+    });
+  }
+
+  // for (var i = 0; i < data.length; i++) {
+  //   db.Item.create({
+  //     item_type: createdType[data[i]["item_type"]],
+  //     name: data[i]["name"],
+  //     size: data[i]["size"]
+  //   });
+  // }
+}
+
+// Syncing our sequelize models and then starting our Express app
+// =============================================================
+db.sequelize.sync({force: true}).then(function () {
+  seed_data();
+
+  // app.listen(PORT, function () {
+  //   console.log("App listening on PORT " + PORT);
+  // });
 });
+
