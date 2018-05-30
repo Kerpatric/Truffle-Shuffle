@@ -64,4 +64,7 @@ function seed_data() {
 // =============================================================
 db.sequelize.sync({force: true}).then(function () {
   seed_data();
+  app.listen(PORT, function () {
+    console.log("App listening on Port " + PORT);
+  })
 });
