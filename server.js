@@ -29,6 +29,7 @@ var routes = require("./controllers/truffle-routes.js");
 
 app.use(routes);
 
+// Sequelize function
 function seed_data() {
   var types = {};
   var createdType = {};
@@ -57,23 +58,10 @@ function seed_data() {
       }
     });
   }
-
-  // for (var i = 0; i < data.length; i++) {
-  //   db.Item.create({
-  //     item_type: createdType[data[i]["item_type"]],
-  //     name: data[i]["name"],
-  //     size: data[i]["size"]
-  //   });
-  // }
 }
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
 db.sequelize.sync({force: true}).then(function () {
   seed_data();
-
-  // app.listen(PORT, function () {
-  //   console.log("App listening on PORT " + PORT);
-  // });
 });
-
