@@ -17,24 +17,25 @@
     <a href="#about" onclick="truffle_close()" class="w3-bar-item w3-button">About</a>
   </nav>
 
-<<<<<<< HEAD
-=======
-  <!-- Top menu -->
-  {{!-- <div class="w3-top">
-    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-      <div class="w3-button w3-padding-16 w3-left" onclick="truffle_open()">☰</div>
-      <div class="w3-right w3-padding-16">Mail</div>
-      <div class="w3-center w3-padding-16">My Truffles</div>
-    </div>
-  </div> --}}
-
->>>>>>> d9d5cb0ba2026f1e63f1478a0e089e06e56615f5
   <!-- !PAGE CONTENT! -->
 
   <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
     {{{body}}}
   </div>
 
+  <form action="/action_page.php" method="get">
+    Email:
+    <br>
+    <input id="emailInput" type="text" name="emailInput">
+    <br> Comment or Question:
+    <br>
+    <textarea rows="4" cols="50" id="emailBody" name="comment" form="usrform">
+            </textarea>
+    <br>
+  </form>
+
+  <input id="submitButton" type="submit" value="Submit">
+  
   <!-- Footer -->
   <footer class="w3-row-padding w3-padding-32">
   </footer>

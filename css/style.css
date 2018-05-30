@@ -2,6 +2,7 @@
 .topnav {
     background-color:saddlebrown;
     overflow: hidden;
+    padding-left: 150px;
 }
 
 /* Style the links inside the navigation bar */
@@ -16,19 +17,15 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #dddddd;
     color: black;
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-}
 .logo{
     position: relative;
-    height: 46.31px;
-    width: 260px;
+    height: 60px;
+    width: 310px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -37,3 +34,8 @@
     height: 100%;
     width: 100%
 }
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Tajawal', sans-serif;
+}
+
