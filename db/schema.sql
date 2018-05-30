@@ -3,7 +3,7 @@ CREATE DATABASE truffle_db;
 
 USE truffle_db;
 
-CREATE TABLE truffles (
+CREATE TABLE truffle (
   id INT(16) NOT NULL AUTO_INCREMENT,
   item_type VARCHAR(500) NOT NULL,
   name VARCHAR(100) NOT NULL,
@@ -11,5 +11,3 @@ CREATE TABLE truffles (
   size VARCHAR(50) NOT NULL,
   PRIMARY KEY (id)
 );
-
-SELECT DISTINCT ON item_type * FROM truffle;

@@ -10,13 +10,8 @@ INSERT INTO truffle (item_type, name, img_src, size) VALUES ("tartufo bianco Whi
 INSERT INTO truffle (item_type, name, img_src, size) VALUES ("tartufo bianco White Truffle Tuber Magnatum Pico", "White Truffle Carpaccio Slices", "./images/truffles/white-truffle.jpg", "4.94 oz.");
 
 #Black Truffles	
-<<<<<<< HEAD
 INSERT INTO truffle (item_type, name, img_src, size) VALUES ("tartufo NERO BLAck WINTER truffle Tuber Melanosporum Vitt", "Whole Fine Black Truffle", "./images/truffles/black-winter-truffle.jpg", "0.88 oz.");
 INSERT INTO truffle (item_type, name, img_src, size) VALUES ("tartufo NERO BLAck WINTER truffle Tuber Melanosporum Vitt", "Whole Fine Black Truffle", "./images/truffles/black-winter-truffle.jpg", "1.76 oz.");
-=======
-INSERT INTO truffles (item_type, name, img_src, size) VALUES ("tartufo NERO BLAck WINTER truffle Tuber Melanosporum Vitt", "Whole Fine Black Truffle", "./images/truffles/black-winter-truffle.jpg", "0.88 oz.");
-INSERT INTO truffles (item_type, name, img_src, size) VALUES ("tartufo NERO BLAck WINTER truffle Tuber Melanosporum Vitt", "Whole Fine Black Truffle", "./images/truffles/black-winter-truffle.jpg", "1.76 oz.");
->>>>>>> d9d5cb0ba2026f1e63f1478a0e089e06e56615f5
 
 INSERT INTO truffle (item_type, name, img_src, size) VALUES ("tartufo NERO BLAck WINTER truffle Tuber Melanosporum Vitt", "Fine Black Truffle Pate", "./images/truffles/black-winter-truffle.jpg", "1.06 oz.");
 INSERT INTO truffle (item_type, name, img_src, size) VALUES ("tartufo NERO BLAck WINTER truffle Tuber Melanosporum Vitt", "Fine Black Truffle Pate", "./images/truffles/black-winter-truffle.jpg", "2.82 oz.");

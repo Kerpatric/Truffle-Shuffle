@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "root",
-    "password": "q5571Y3416",
-    "database": "truffle_db",
-    "host": "127.0.0.1",
+    "username": "tl1thlfqst4bjaiv",
+    "password": "f5umrml4shdieaa4",
+    "database": "taroqedf39h489ru",
+    "host": "k9xdebw4k3zynl4u.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "username": "tl1thlfqst4bjaiv",
+    "password": "f5umrml4shdieaa4",
+    "database": "taroqedf39h489ru",
+    "host": "k9xdebw4k3zynl4u.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "tl1thlfqst4bjaiv",
+    "password": "f5umrml4shdieaa4",
+    "database": "taroqedf39h489ru",
+    "host": "k9xdebw4k3zynl4u.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }
